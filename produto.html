@@ -28,6 +28,11 @@ padding:10px;
 border:none;
 border-radius:8px;
 cursor:pointer;
+margin-top:10px;
+}
+
+button:hover{
+background:#6d28d9;
 }
 
 </style>
@@ -45,6 +50,8 @@ cursor:pointer;
 <p id="preco"></p>
 
 <button onclick="comprar()">Comprar</button>
+<br><br>
+<button onclick="voltar()">Voltar</button>
 
 </div>
 
@@ -78,7 +85,11 @@ document.getElementById("preco").innerText = p.preco;
 document.getElementById("imagem").src = p.img;
 
 function comprar(){
-    alert("Compra realizada com sucesso 💜");
+    alert("Compra realizada 💜");
+}
+
+function voltar(){
+    window.location.href = "index.html";
 }
 
 </script>
