@@ -5,7 +5,6 @@
 <title>La Beauté Brasil</title>
 
 <style>
-
 body{
 margin:0;
 font-family:Arial;
@@ -17,6 +16,11 @@ background:#8b5cf6;
 color:white;
 text-align:center;
 padding:30px;
+}
+
+.logo{
+width:120px;
+margin-bottom:10px;
 }
 
 .container{
@@ -41,7 +45,6 @@ cursor:pointer;
 width:100%;
 border-radius:10px;
 }
-
 </style>
 
 </head>
@@ -49,23 +52,23 @@ border-radius:10px;
 <body>
 
 <header>
-<h1>La Beauté Brasil 💜</h1>
+<h1>La Beauté Brasil</h1>
 </header>
 
 <div class="container">
 
 <div class="produto" onclick="abrirProduto('batom')">
-<img src="batom.jpg">
+<img src="https://i.ibb.co/RkvrThzp/batom.png">
 <h3>Batom Matte</h3>
 </div>
 
 <div class="produto" onclick="abrirProduto('perfume')">
-<img src="perfume.jpg">
+<img src="https://i.ibb.co/XfmVVdPN/perfume.png">
 <h3>Perfume Floral</h3>
 </div>
 
 <div class="produto" onclick="abrirProduto('creme')">
-<img src="creme.jpg">
+<img src="https://i.ibb.co/WvdMtFLX/creme.png">
 <h3>Creme Hidratante</h3>
 </div>
 
@@ -73,9 +76,10 @@ border-radius:10px;
 
 <script>
 function abrirProduto(nome){
-    window.location.href = "produto.html?produto=" + nome;
+window.location.href = "produto.html?produto=" + nome;
 }
 </script>
 
 </body>
+
 </html>
