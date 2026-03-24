@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+<title>Produto</title>
+
+<style>
+
+body{
+font-family:Arial;
+text-align:center;
+background:#f6ecff;
+}
+
+.container{
+padding:40px;
+}
+
+img{
+width:250px;
+border-radius:10px;
+}
+
+button{
+background:#7c3aed;
+color:white;
+padding:10px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1 id="nome"></h1>
+
+<img id="imagem">
+
+<p id="preco"></p>
+
+<button onclick="comprar()">Comprar</button>
+
+</div>
+
+<script>
+
+let dados = {
+    batom: {
+        nome: "Batom Matte",
+        preco: "R$39,90",
+        img: "batom.jpg"
+    },
+    perfume: {
+        nome: "Perfume Floral",
+        preco: "R$89,90",
+        img: "perfume.jpg"
+    },
+    creme: {
+        nome: "Creme Hidratante",
+        preco: "R$49,90",
+        img: "creme.jpg"
+    }
+};
+
+let params = new URLSearchParams(window.location.search);
+let produto = params.get("produto");
+
+let p = dados[produto];
+
+document.getElementById("nome").innerText = p.nome;
+document.getElementById("preco").innerText = p.preco;
+document.getElementById("imagem").src = p.img;
+
+function comprar(){
+    alert("Compra realizada com sucesso 💜");
+}
+
+</script>
+
+</body>
+
+</html>
