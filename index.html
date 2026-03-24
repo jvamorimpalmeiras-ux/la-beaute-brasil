@@ -21,11 +21,7 @@ padding:30px;
 
 .logo{
 width:120px;
-}
-
-.titulo{
-font-size:32px;
-font-weight:bold;
+margin-bottom:10px;
 }
 
 .container{
@@ -41,43 +37,14 @@ background:white;
 width:220px;
 padding:20px;
 border-radius:15px;
-box-shadow:0 6px 15px rgba(0,0,0,0.1);
 text-align:center;
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
+cursor:pointer;
 }
 
 .produto img{
 width:100%;
 border-radius:10px;
-}
-
-.preco{
-color:#7c3aed;
-font-weight:bold;
-margin:10px;
-}
-
-button{
-background:#7c3aed;
-color:white;
-border:none;
-padding:10px;
-width:100%;
-border-radius:8px;
-cursor:pointer;
-}
-
-button:hover{
-background:#6d28d9;
-}
-
-.carrinho{
-position:fixed;
-top:10px;
-right:10px;
-background:white;
-padding:10px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.2);
 }
 
 </style>
@@ -88,46 +55,32 @@ box-shadow:0 0 10px rgba(0,0,0,0.2);
 
 <header>
 <img src="logo.png" class="logo">
-<div class="titulo">La Beauté Brasil</div>
+<h1>La Beauté Brasil 💜</h1>
 </header>
-
-<div class="carrinho">
-🛒 Carrinho: <span id="total">0</span>
-</div>
 
 <div class="container">
 
-<div class="produto">
+<div class="produto" onclick="abrirProduto('batom')">
 <img src="batom.jpg">
 <h3>Batom Matte</h3>
-<div class="preco">R$39,90</div>
-<button onclick="comprar()">Comprar</button>
 </div>
 
-<div class="produto">
+<div class="produto" onclick="abrirProduto('perfume')">
 <img src="perfume.jpg">
 <h3>Perfume Floral</h3>
-<div class="preco">R$89,90</div>
-<button onclick="comprar()">Comprar</button>
 </div>
 
-<div class="produto">
+<div class="produto" onclick="abrirProduto('creme')">
 <img src="creme.jpg">
 <h3>Creme Hidratante</h3>
-<div class="preco">R$49,90</div>
-<button onclick="comprar()">Comprar</button>
 </div>
 
 </div>
 
 <script>
 
-let total = 0;
-
-function comprar(){
-    total++;
-    document.getElementById("total").innerText = total;
-    alert("Produto adicionado ao carrinho 🛍️");
+function abrirProduto(nome){
+    window.location.href = "produto.html?produto=" + nome;
 }
 
 </script>
