@@ -31,6 +31,10 @@ cursor:pointer;
 margin-top:10px;
 }
 
+button:hover{
+background:#6d28d9;
+}
+
 </style>
 
 </head>
@@ -57,17 +61,17 @@ let dados = {
     batom: {
         nome: "Batom Matte",
         preco: "R$39,90",
-        img: "batom.jpg"
+        img: "https://i.ibb.co/RkvrThzp/batom.png"
     },
     perfume: {
         nome: "Perfume Floral",
         preco: "R$89,90",
-        img: "perfume.jpg"
+        img: "https://i.ibb.co/XfmVVdPN/perfume.png"
     },
     creme: {
         nome: "Creme Hidratante",
         preco: "R$49,90",
-        img: "creme.jpg"
+        img: "https://i.ibb.co/WvdMtFLX/creme.png"
     }
 };
 
@@ -81,7 +85,7 @@ document.getElementById("preco").innerText = p.preco;
 document.getElementById("imagem").src = p.img;
 
 function comprar(){
-    alert("Compra realizada 💜");
+    alert("Compra realizada com sucesso 💜");
 }
 
 function voltar(){
