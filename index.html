@@ -19,11 +19,6 @@ text-align:center;
 padding:30px;
 }
 
-.logo{
-width:120px;
-margin-bottom:10px;
-}
-
 .container{
 display:flex;
 justify-content:center;
@@ -54,37 +49,33 @@ border-radius:10px;
 <body>
 
 <header>
-<img src="logo.png" class="logo">
 <h1>La Beauté Brasil 💜</h1>
 </header>
 
 <div class="container">
 
 <div class="produto" onclick="abrirProduto('batom')">
-<img src="https://<img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa">
+<img src="batom.jpg">
 <h3>Batom Matte</h3>
 </div>
 
 <div class="produto" onclick="abrirProduto('perfume')">
-<img src="https://files.fm/u/6xrrjncdn9.jpg">
+<img src="perfume.jpg">
 <h3>Perfume Floral</h3>
 </div>
 
 <div class="produto" onclick="abrirProduto('creme')">
-<img src="https://files.fm/u/wxrhfctd55.jpg">
+<img src="creme.jpg">
 <h3>Creme Hidratante</h3>
 </div>
 
 </div>
 
 <script>
-
 function abrirProduto(nome){
     window.location.href = "produto.html?produto=" + nome;
 }
-
 </script>
 
 </body>
-
 </html>
