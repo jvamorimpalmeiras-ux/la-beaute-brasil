@@ -5,6 +5,7 @@
 <title>La Beauté Brasil</title>
 
 <style>
+
 body{
 margin:0;
 font-family:Arial;
@@ -16,11 +17,6 @@ background:#8b5cf6;
 color:white;
 text-align:center;
 padding:30px;
-}
-
-.logo{
-width:120px;
-margin-bottom:10px;
 }
 
 .container{
@@ -39,12 +35,18 @@ border-radius:15px;
 text-align:center;
 box-shadow:0 6px 15px rgba(0,0,0,0.1);
 cursor:pointer;
+transition:0.3s;
+}
+
+.produto:hover{
+transform:scale(1.05);
 }
 
 .produto img{
 width:100%;
 border-radius:10px;
 }
+
 </style>
 
 </head>
@@ -52,7 +54,7 @@ border-radius:10px;
 <body>
 
 <header>
-<h1>La Beauté Brasil</h1>
+<h1>La Beauté Brasil 💜</h1>
 </header>
 
 <div class="container">
@@ -70,6 +72,11 @@ border-radius:10px;
 <div class="produto" onclick="abrirProduto('creme')">
 <img src="https://i.ibb.co/WvdMtFLX/creme.png">
 <h3>Creme Hidratante</h3>
+</div>
+
+<div class="produto" onclick="abrirProduto('desodorante')">
+<img src="https://i.ibb.co/4pYyY7W/desodorante.png">
+<h3>Desodorante Masculino</h3>
 </div>
 
 </div>
