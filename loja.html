@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Loja</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#f6ecff;
+}
+
+header{
+background:#8b5cf6;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+.container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+padding:40px;
+}
+
+.produto{
+background:white;
+width:220px;
+padding:20px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
+cursor:pointer;
+transition:0.3s;
+}
+
+.produto:hover{
+transform:scale(1.05);
+}
+
+.produto img{
+width:100%;
+border-radius:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Produtos 💜</h1>
+</header>
+
+<div class="container">
+
+<div class="produto" onclick="abrirProduto('batom')">
+<img src="https://i.ibb.co/RkvrThzp/batom.png">
+<h3>Batom Matte</h3>
+</div>
+
+<div class="produto" onclick="abrirProduto('perfume')">
+<img src="https://i.ibb.co/XfmVVdPN/perfume.png">
+<h3>Perfume Floral</h3>
+</div>
+
+<div class="produto" onclick="abrirProduto('creme')">
+<img src="https://i.ibb.co/WvdMtFLX/creme.png">
+<h3>Creme Hidratante</h3>
+</div>
+
+</div>
+
+<script>
+function abrirProduto(nome){
+window.location.href = "produto.html?produto=" + nome;
+}
+</script>
+
+</body>
+
+</html>
