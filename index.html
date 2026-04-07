@@ -19,6 +19,24 @@ text-align:center;
 padding:30px;
 }
 
+.intro{
+text-align:center;
+padding:30px;
+max-width:600px;
+margin:auto;
+}
+
+.intro h2{
+color:#7c3aed;
+font-size:28px;
+margin-bottom:10px;
+}
+
+.intro p{
+color:#555;
+font-size:16px;
+}
+
 .container{
 display:flex;
 justify-content:center;
@@ -57,6 +75,14 @@ border-radius:10px;
 <h1>La Beauté Brasil 💜</h1>
 </header>
 
+<section class="intro">
+<h2>Bem-vindo à La Beauté Brasil 💜</h2>
+<p>
+Descubra os melhores cosméticos para realçar sua beleza.
+Produtos selecionados com qualidade e estilo para o seu dia a dia.
+</p>
+</section>
+
 <div class="container">
 
 <div class="produto" onclick="abrirProduto('batom')">
@@ -74,7 +100,10 @@ border-radius:10px;
 <h3>Creme Hidratante</h3>
 </div>
 
-
+<div class="produto" onclick="abrirProduto('desodorante')">
+<img src="https://i.ibb.co/0c4R6sP/desodorante2.png">
+<h3>Desodorante Masculino</h3>
+</div>
 
 </div>
 
